@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Josie's Garden</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Josie's Garden</h1>
+        <img id="gardenImage" src="spring.jpg" alt="cat in garden">
+        <p id="description">This is the place to plan out Josie's garden(s) for the year.</p>
+
+        <div class="season-selector">
+            <button id="springBtn">Spring</button>
+            <button id="summerBtn">Summer</button>
+            <button id="autumnBtn">Autumn</button>
+            <button id="winterBtn">Winter</button>
+        </div>
+    </div>
+    <div class="winter-text">
+        <p style="text-align: center;">Stay warm and start planning for next year!</p>
+    </div>
+
+    <h2>Main garden</h2>
+    <h3 ID="Sun">Sun</h3>
+    <p class="autumn-text">Mulch</p>
+    <p class="winter-text"> sleeping . . .</p>
+    <table style="width: 25%" class="tasks">
+        <tr>
+            <th>Plant</th>
+            <th>Flower</th>
+            <th>Where?</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td>Larkspur</td>
+            <td>Back</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td>Foxglove</td>
+            <td>Back</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td>Delphinium</td>
+            <td>Back</td>
+        </tr>
+        </table>
+        <br>
+        <table style="width: 25%" class="tasks">
+            <th>Move</th>
+            <th>Flower</th>
+            <th>Where?</th>
+        <tr>
+            <td> </td>
+            <td>Lilies</td>
+            <td>Front/Centre</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td>Rose</td>
+            <td>Forward</td>
+        </tr>
+        </table>
+        <br>
+        <table style="width: 25%" class="tasks">
+            <th>Thin</th>
+            <th>Flower</th>
+            <th>Where?</th>
+        <tr>
+            <td> </td>
+            <td>Mums</td>
+            <td>Everywhere</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td>Autumn Joy</td>
+            <td>Front</td>
+        </tr>
+    </table>
+
+    <h2>Driveway (Veggie) Garden</h2>
+    <h3 ID="Sun">Sun</h3>
+    <p class="autumn-text">Mulch</p>
+    <p class="winter-text"> sleeping . . .</p>
+    <p class="tasks"; style="color: orchid;"><strong>Plant:</strong>
+        <ul class="tasks">
+            <li>Tomatoes</li>
+            <li>Bell Peppers</li>
+            <li>Jalapenos</li>
+            <li>Eggplants</li>
+            <li>Carrots</li>
+            <li>Borage</li>
+            <li>Basil</li>
+            <li>Oregano</li>
+        </ul>
+    </p>
+
+    <h2>Lower (Veggie) Garden</h2>
+    <h3 Id="Sun">Sun</h3>
+    <p class="autumn-text">Mulch</p>
+    <p class="winter-text"> sleeping . . .</p>
+    <p class="tasks"> Dig out!!</p>
+
+    <h2>Porch Planters</h2>
+    <h3 id="Sun">Sun</h3>
+    <p class="winter-text"> sleeping . . .</p>
+    <dl class="tasks">
+        <dt class="tasks">Strawberry Barrel</dt>
+        <dt class="tasks">Red Planter Herbs</dt>
+        <dd class="tasks">Parsley, Thyme, Cilantro, Chives, Rosemary, Lavender, Sage</dd>
+    </dl>
+
+    <h2>Guest Garden</h2>
+    <h3 ID="Part">Part-Sun</h3>
+    <p class="autumn-text">Mulch</p>
+    <p class="winter-text"> sleeping . . .</p>
+
+    <h2>Front of House</h2>
+    <h3 Id="Shade">Shade</h3>
+    <p class="autumn-text">Mulch</p>
+    <p class="winter-text"> sleeping . . .</p>
+
+    <script>
+        document.getElementById('springBtn').addEventListener('click', function() {
+            document.getElementById('gardenImage').src = 'spring.jpg';
+            document.body.classList.remove('winter-effect');
+            document.body.classList.remove('autumn-effect');
+            document.body.classList.remove('summer-effect');
+        });
+
+        document.getElementById('summerBtn').addEventListener('click', function() {
+            document.getElementById('gardenImage').src = 'Spud_in_garden.jpg';
+            document.body.classList.add('summer-effect');
+            document.body.classList.remove('winter-effect');
+            document.body.classList.remove('autumn-effect');
+        });
+
+        document.getElementById('autumnBtn').addEventListener('click', function() {
+            document.getElementById('gardenImage').src = 'fall.jpg';
+            document.body.classList.remove('summer-effect');
+            document.body.classList.remove('winter-effect');
+            document.body.classList.add('autumn-effect');
+        });
+
+        document.getElementById('winterBtn').addEventListener('click', function() {
+            document.getElementById('gardenImage').src = 'winter.jpg';
+            document.body.classList.remove('summer-effect');
+            document.body.classList.add('winter-effect');
+            document.body.classList.remove('autumn-effect');
+        });
+    </script>
+</body>
+</html>

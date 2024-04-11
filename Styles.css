@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: cursive;
+    color: palevioletred;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: forestgreen;
+    /* background-color: aqua; */
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    max-width: 100%;
+}
+
+.season-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.season-selector button {
+    padding: 10px 20px;
+    background-color: lavender;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#description {
+    color: palevioletred;
+    font-family:cursive;
+}
+#Sun {
+    color:gold;
+}
+#Shade {
+    color:silver;
+}
+#Part {
+    color: goldenrod
+}
+
+table,
+th,
+td {
+    border: 1px solid aquamarine;
+    background-color: lemonchiffon;
+    color: plum;
+}
+
+p {
+    color:plum
+}
+ul {
+    color:orchid
+}
+dt{
+    color:darksalmon
+}
+dd{
+    color:lightcoral
+}
+.winter-effect {
+    background-color: grey;
+}
+.winter-effect h1,
+.winter-effect h2, 
+.winter-effect #description {
+    color:white
+}
+.winter-text{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.winter-effect .winter-text{
+    display: block;
+    color:black;
+}
+.winter-effect img {
+    filter: grayscale(50%);
+}
+.winter-effect .tasks {
+    display: none;
+}
+
+.summer-effect {
+    background-color: lemonchiffon;
+}
+.summer-effect .tasks {
+    color:cornflowerblue
+}
+
+.autumn-effect {
+    background-color: salmon;
+}
+
+.autumn-effect .tasks { 
+/* change later, many spring tasks irrelevant */
+    color:aquamarine
+}
+.autumn-text{
+    display:none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.autumn-effect .autumn-text{
+    display: block;
+    color:aquamarine
+
+}
